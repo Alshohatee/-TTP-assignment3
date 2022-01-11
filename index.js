@@ -45,7 +45,14 @@ let footerEl2 = document.getElementsByClassName('footer')[0]
 footerEl1.classList.remove("main")
 
 // 8) Create a new li element.
+let newEl = document.createElement('li')
+
 // 9) Give the li the text "four".
+newEl.innerHTML = "four"
+
 // 10) Append the li to the ul element.
+let ulEl = document.querySelector('ul')
+ulEl.append(newEl)
+
 // 12) Loop over all of the lis inside the ol tag and give them a background color of "green".
 // 13) Remove the div with a class of footer.
