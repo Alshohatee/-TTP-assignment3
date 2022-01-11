@@ -10,15 +10,24 @@ Complete and submit the following based on this link (https://gist.github.com/aj
 let sectionElUsingId = document.getElementById('container')
 
 // 2) Select the section with an id of container using querySelector.
-let sectionElUsingQuery = document.querySelector('section')
+// way 1:
+let sectionElUsingQuery1 = document.querySelector('section')
+    // way 2:
+let sectionElUsingQuery2 = document.querySelector('#container')
 
 // 3) Select all of the list items with a class of "second".
 // This will return list of all the elements with class name of second
 let listItemsSecond = document.getElementsByClassName('second')
 
+
 // 4) Select a list item with a class of third, but only the list item inside of the ol tag.
-listItemsSecond.style.display = "none";
+// way1: 
+let listItemsThird1 = document.querySelector('.third')
+    // way2: 
+let listItemsThird2 = document.querySelector('ol li.third')
+
 // 5) Give the section with an id of container the text "Hello!".
+// listItemsThird.style.display = "none";
 // 6) Add the class main to the div with a class of footer.
 // 7) Remove the class main on the div with a class of footer.
 // 8) Create a new li element.
