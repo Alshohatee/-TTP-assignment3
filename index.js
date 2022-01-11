@@ -19,7 +19,6 @@ let sectionElUsingQuery2 = document.querySelector('#container')
 // This will return list of all the elements with class name of second
 let listItemsSecond = document.getElementsByClassName('second')
 
-
 // 4) Select a list item with a class of third, but only the list item inside of the ol tag.
 // way1: 
 let listItemsThird1 = document.querySelector('.third')
@@ -31,7 +30,18 @@ let listItemsThird2 = document.querySelector('ol li.third')
 sectionElUsingId.innerHTML += "Hello"
 
 // 6) Add the class main to the div with a class of footer.
-// listItemsThird.style.display = "none";
+// way 1
+let footerEl1 = document.querySelector('div.footer')
+footerEl1.className += " main"
+
+
+// way 2 getElementsByClassName return list of the footers [div]
+let footerEl2 = document.getElementsByClassName('footer')[0]
+    // footerEl2.className += " main"  
+
+// Way 2
+
+
 // 7) Remove the class main on the div with a class of footer.
 // 8) Create a new li element.
 // 9) Give the li the text "four".
