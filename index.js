@@ -37,12 +37,13 @@ footerEl1.className += " main"
 
 // way 2 getElementsByClassName return list of the footers [div]
 let footerEl2 = document.getElementsByClassName('footer')[0]
-    // footerEl2.className += " main"  
 
-// Way 2
+// footerEl2.className += " main"  
 
 
 // 7) Remove the class main on the div with a class of footer.
+footerEl1.classList.remove("main")
+
 // 8) Create a new li element.
 // 9) Give the li the text "four".
 // 10) Append the li to the ul element.
