@@ -62,3 +62,5 @@ for (let i = 0; i < liEls.length; i++) {
     liEls[i].style.background = "green"
 }
 // 13) Remove the div with a class of footer.
+// footerEl1.style.display = "none"
+footerEl1.remove()
